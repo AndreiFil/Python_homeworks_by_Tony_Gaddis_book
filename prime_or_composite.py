@@ -5,7 +5,7 @@ my_range = int(input("The range starts from 1 and ends with the number you speci
 prime_nums = []
 composite_nums = []
 
-def main():
+def prime_or_composite():
     for num in range(2, my_range+1):
         if is_prime(num):
             prime_nums.append(num)
@@ -34,4 +34,4 @@ def is_prime(numb):
         status = True
         return status
 
-main()
+prime_or_composite()
